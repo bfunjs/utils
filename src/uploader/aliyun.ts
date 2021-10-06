@@ -1,5 +1,5 @@
 // @ts-ignore
-import AliOss from 'ali-oss';
+import * as AliOss from 'ali-oss';
 import { IDefaultOptions, Uploader } from './interface';
 
 export class AliYun extends Uploader {
