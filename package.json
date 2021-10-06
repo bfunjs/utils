@@ -1,0 +1,49 @@
+{
+  "name": "@bfun/utils",
+  "version": "1.1.1",
+  "description": "@bfun/utils Node Common Library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "test": "__tests__"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "test": "npm run build && jest",
+    "coverage": "npm run build && jest --coverage",
+    "release": "npm run build && npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bfunjs/bfun-utils.git"
+  },
+  "author": "suibinc@qq.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bfunjs/bfun-utils/issues"
+  },
+  "homepage": "https://github.com/bfunjs/bfun-utils#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^13.13.52",
+    "@types/rimraf": "^3.0.2",
+    "@types/vinyl-fs": "^2.4.12",
+    "jest": "^27.2.4",
+    "ncp": "^2.0.0",
+    "regenerator-runtime": "^0.13.9",
+    "ts-node": "^10.2.1",
+    "typescript": "^3.9.10"
+  },
+  "dependencies": {
+    "ali-oss": "^6.16.0",
+    "map-stream": "^0.0.7",
+    "qiniu": "^7.4.0",
+    "rimraf": "^3.0.2",
+    "vinyl-fs": "^3.0.3"
+  }
+}
